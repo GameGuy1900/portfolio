@@ -25,14 +25,18 @@ document.getElementById("playBtn").addEventListener("click", ()=>{
     }, 500);
     if (move1 > 745){
         alert("player 1 won!!");
+        document.getElementById("playBtn").disabled = false;
     }
     else if (move2 > 745){
         alert("player 2 won!!");
+        document.getElementById("playBtn").disabled = false;
     }
     else if (move3 > 745){
         alert("player 3 won!!");
+        document.getElementById("playBtn").disabled = false;
     }
     else if (move4 > 745){
         alert("player 4 won!!");
+        document.getElementById("playBtn").disabled = false;
     }
 });
