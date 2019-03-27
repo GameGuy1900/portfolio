@@ -71,7 +71,7 @@
             <div class="row">
 
               <div class="brand">
-                <a href="index.php">Jason's Test Websites</a>
+                <a href="index.php">Jason's Websites</a>
               </div>
             </div>
          </div>
