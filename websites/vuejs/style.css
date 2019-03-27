@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+    
+#app {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 50px;
+}
+
+.modal-open { 
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#modal {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 400px;
+    background-color: white;
+    border: 10px solid #ffcc00;
+    padding: 25px;
+    z-index: 10;
+}
+
+p {
+    display: block;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}

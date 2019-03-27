@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal example</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-gamepad/dist/vue-gamepad.min.js"></script>
+  </head>
+  <body>
+    <div id="app" v-bind:class="{ 'modal-open': isOpen }">
+      <button v-gamepad:button-a @click="isOpen = true">Open Modal (A)</button>
+      <div id="modal" v-if="isOpen">
+        <button v-gamepad:button-a @click="press">{{ okText.a }} (A)</button>
+        <button v-gamepad:button-y @click="press">{{ okText.b }} (Y)</button>
+        <button v-gamepad:button-b @click="close">Close (B)</button>
+      </div>
+    </div>
+    <script src="gamepad.js"></script>
+  </body>
+</html>
