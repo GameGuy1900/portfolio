@@ -4,6 +4,7 @@ let move2 = 10;
 let move3 = 10;
 let move4 = 10;
 document.getElementById("playBtn").addEventListener("click", ()=>{
+    document.getElementById("playBtn").disabled = true;
     setInterval(()=>{
         if (move1 < 780) {
             document.getElementById('contender-1').style.left = move1.toString().concat(px);
