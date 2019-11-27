@@ -491,7 +491,11 @@ a.icon {
   position: relative;
   overflow: hidden;
   margin: 0;
-} 
+}
+
+#portfolio .portfolio-thumb li {
+  list-style-type:none;
+}
 
 #portfolio .portfolio-thumb .portfolio-overlay {
   background: #141414;
