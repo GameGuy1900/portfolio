@@ -119,7 +119,7 @@
 						  foreach(glob('websites/*', GLOB_ONLYDIR) as $dir){
 							echo "<div class='iso-box photoshop branding col-md-4 col-sm-6'>";
 							echo "<div class='portfolio-thumb'>";
-							echo "<li><a href='" . $dir . "'><img src='" . $photodir . "/img" . $photonr . ".png' alt='' class='img-responsive iso-section wow fadeInUp' width='500px' data-wow-delay='0.5s'></a></li><br>"; //http://jasonvdh.ddns.net/" . $dir . "</a></li><br>"; <div class='box'><iframe src='http://jasonvdh.ddns.net/" . $dir . "' width = '800px' height = '500px'></iframe></div></li><br>";
+							echo "<li style="list-style-type: none;"><a href='" . $dir . "'><img src='" . $photodir . "/img" . $photonr . ".png' alt='' class='img-responsive iso-section wow fadeInUp' width='500px' data-wow-delay='0.5s'></a></li><br>"; //http://jasonvdh.ddns.net/" . $dir . "</a></li><br>"; <div class='box'><iframe src='http://jasonvdh.ddns.net/" . $dir . "' width = '800px' height = '500px'></iframe></div></li><br>";
 							echo "</div>";
 							echo "</div>";
 							$photonr++;
