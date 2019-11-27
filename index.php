@@ -111,6 +111,7 @@
                         <!-- iso box section -->
                         <div class="iso-box-section wow fadeInUp" data-wow-delay="0.2s">
                           <div class="iso-box-wrapper col4-iso-box">
+				<ul style="list-style-type:none">
 						  <?php $photodir = 'img';
 						  $photos = scandir($photodir);
 						  array_pop($photos);
@@ -119,13 +120,14 @@
 						  foreach(glob('websites/*', GLOB_ONLYDIR) as $dir){
 							echo "<div class='iso-box photoshop branding col-md-4 col-sm-6'>";
 							echo "<div class='portfolio-thumb'>";
-							echo "<li style="list-style-type: none;"><a href='" . $dir . "'><img src='" . $photodir . "/img" . $photonr . ".png' alt='' class='img-responsive iso-section wow fadeInUp' width='500px' data-wow-delay='0.5s'></a></li><br>"; //http://jasonvdh.ddns.net/" . $dir . "</a></li><br>"; <div class='box'><iframe src='http://jasonvdh.ddns.net/" . $dir . "' width = '800px' height = '500px'></iframe></div></li><br>";
+							echo "<li><a href='" . $dir . "'><img src='" . $photodir . "/img" . $photonr . ".png' alt='' class='img-responsive iso-section wow fadeInUp' width='500px' data-wow-delay='0.5s'></a></li><br>"; //http://jasonvdh.ddns.net/" . $dir . "</a></li><br>"; <div class='box'><iframe src='http://jasonvdh.ddns.net/" . $dir . "' width = '800px' height = '500px'></iframe></div></li><br>";
 							echo "</div>";
 							echo "</div>";
 							$photonr++;
 						  }
                      ?>
-                     </div>
+				  </ul>
+			</div>
                   </div>
                </div>
          </div>
